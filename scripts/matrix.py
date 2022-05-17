@@ -3,10 +3,16 @@ class Matrix:
     def __init__(self, numbers: str) -> str:
         self.numbers = numbers
 
-    def rows(self):
+    def rows(self) -> list:
+        """
+        Returns a list with the rows in the matrix
+        """
         return self.numbers.split("\n")
 
-    def columns(self):
+    def columns(self) -> list:
+        """
+        Returns a list with the columns in th ematrix
+        """
         columns = []
         i = 0
         while i < len(self.rows()[0]):
