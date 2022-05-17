@@ -1,7 +1,7 @@
 class Matrix:
 
-    def __init__(self, numbers: str) -> str:
-        self.numbers = numbers
+    def __init__(self, matrix_string: str) -> str:
+        self.matrix_string = matrix_string
 
     def rows(self) -> list:
         """
