@@ -13,4 +13,4 @@ def test_matrix_returns_rows():
 
 def test_matrix_returns_columns():
     m = Matrix("1 2 3\n4 5 6\n7 8 9")
-    assert m.columns() == ["1 4 7", "2, 5, 8", "3, 6, 9"]
+    assert m.columns() == ["1 4 7", "2 5 8", "3 6 9"]
