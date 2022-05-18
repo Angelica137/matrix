@@ -16,6 +16,11 @@ def test_row_returns_single_row_1():
     assert m.row(1) == [1]
 
 
+def test_row_returns_single_row_1():
+    m = Matrix("1 2 3\n4 5 6\n7 8 9")
+    assert m.row(1) == [1, 2, 3]
+
+
 """
 def test_matrix_returns_columns():
     m = Matrix("1 2 3\n4 5 6\n7 8 9")
