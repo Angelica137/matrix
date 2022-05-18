@@ -9,7 +9,10 @@ class Matrix:
         """
         return self.matrix_string.split("\n")
 
-    def row(self, row_number):
+    def row(self, row_number: int) -> list:
+        """
+        Returns the row requested by row_number
+        """
         single_row = self.rows()[row_number - 1].split(" ")
         for i in range(len(single_row)):
             single_row[i] = int(single_row[i])
