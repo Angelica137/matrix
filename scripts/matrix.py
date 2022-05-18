@@ -7,7 +7,13 @@ class Matrix:
         """
         Returns a list with the rows in the matrix
         """
-        return self.numbers.split("\n")
+        return self.matrix_string.split("\n")
+
+    def row(self, row_number):
+        single_row = self.rows()[row_number - 1].split(" ")
+        for i in range(len(single_row)):
+            single_row[i] = int(single_row[i])
+        return single_row
 
     def columns(self) -> list:
         """
@@ -22,3 +28,28 @@ class Matrix:
             i += 2
             columns.append(column[:-1])
         return columns
+
+
+r = ['1']
+for i in range(len(r)):
+    r[i] = int(r[i])
+print(r)
+print('this is r')
+
+
+m = Matrix("1 2 3\n4 5 6")
+
+r = m.rows()[2 - 1].split(" ")
+print(r)
+for char in r:
+    char = int(char)
+print(r)
+
+
+o = '1'
+o = int(o)
+print(o)
+
+o = ['1']
+o[0] = int(o[0])
+print(o)
