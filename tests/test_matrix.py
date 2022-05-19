@@ -32,12 +32,11 @@ def test_column_returns_columns_2():
         '1903', '3', '4'], ['3', '1', '800']]
 
 
-"""
 def test_column_returns_single_column_1():
     m = Matrix("1")
     assert m.column(1) == [1]
 
+
 def test_column_returns_column_2():
     m = Matrix("89 1903 3\n18 3 1\n9 4 800")
     assert m.column(2) == [1903, 3, 4]
-"""
