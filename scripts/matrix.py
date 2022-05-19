@@ -43,11 +43,3 @@ class Matrix:
         for i in range(len(single_column)):
             single_column[i] = int(single_column[i])
         return single_column
-
-
-m = Matrix("1 2 3\n4 5 6\n7 8 9")
-rows = m.rows()
-r = []
-for row in m.rows():
-    r.append(row.split(" "))
-print(len(r[0]))
