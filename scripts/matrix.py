@@ -23,13 +23,16 @@ class Matrix:
         Returns a list with the columns in the matrix
         """
         columns = []
+        rows = []
+        for row in self.rows():
+            rows.append(row.split(" "))
         i = 0
-        while i < len(self.rows()[0]):
-            column = ""
-            for row in self.rows():
-                column += row[i] + " "
-            i += 2
-            columns.append(column[:-1])
+        while i < len(rows[0]):
+            column = []
+            for row in rows:
+                column.append(row[i])
+            columns.append(column)
+            i += 1
         return columns
 
     def column(self, column_number: int) -> list:
@@ -40,3 +43,11 @@ class Matrix:
         for i in range(len(single_column)):
             single_column[i] = int(single_column[i])
         return single_column
+
+
+m = Matrix("1 2 3\n4 5 6\n7 8 9")
+rows = m.rows()
+r = []
+for row in m.rows():
+    r.append(row.split(" "))
+print(len(r[0]))
