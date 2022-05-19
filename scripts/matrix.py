@@ -33,6 +33,9 @@ class Matrix:
         return columns
 
     def column(self, column_number: int) -> list:
+        """
+        Returns a list with the column itens for the requested column
+        """
         single_column = self.columns()[column_number - 1].split(" ")
         for i in range(len(single_column)):
             single_column[i] = int(single_column[i])
