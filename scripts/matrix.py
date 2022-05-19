@@ -31,3 +31,9 @@ class Matrix:
             i += 2
             columns.append(column[:-1])
         return columns
+
+    def column(self, column_number: int) -> list:
+        single_column = self.columns()[column_number - 1].split(" ")
+        for i in range(len(single_column)):
+            single_column[i] = int(single_column[i])
+        return single_column
