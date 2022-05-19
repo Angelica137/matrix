@@ -20,7 +20,7 @@ class Matrix:
 
     def columns(self) -> list:
         """
-        Returns a list with the columns in th ematrix
+        Returns a list with the columns in the matrix
         """
         columns = []
         i = 0
