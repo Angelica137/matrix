@@ -31,28 +31,3 @@ class Matrix:
             i += 2
             columns.append(column[:-1])
         return columns
-
-
-r = ['1']
-for i in range(len(r)):
-    r[i] = int(r[i])
-print(r)
-print('this is r')
-
-
-m = Matrix("1 2 3\n4 5 6")
-
-r = m.rows()[2 - 1].split(" ")
-print(r)
-for char in r:
-    char = int(char)
-print(r)
-
-
-o = '1'
-o = int(o)
-print(o)
-
-o = ['1']
-o[0] = int(o[0])
-print(o)
