@@ -43,3 +43,13 @@ class Matrix:
         for i in range(len(single_column)):
             single_column[i] = int(single_column[i])
         return single_column
+
+
+def vector_format(string_vector: list) -> list:
+    """
+    : param: string_vector -> is a list of strings
+    : Return: vector -> formats the list of strings to return the items as integers
+    """
+    for i in range(len(string_vector)):
+        string_vector[i] = int(string_vector[i])
+    return string_vector
