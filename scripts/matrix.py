@@ -40,9 +40,12 @@ class Matrix:
         Returns a list with the column itens for the requested column
         """
         single_column = self.columns()[column_number - 1]
+        return vector_format(single_column)
+        """
         for i in range(len(single_column)):
             single_column[i] = int(single_column[i])
         return single_column
+        """
 
 
 def vector_format(string_vector: list) -> list:
