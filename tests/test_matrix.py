@@ -26,7 +26,7 @@ def test_matrix_returns_columns():
     assert m.columns() == [['1', '4', '7'], ['2', '5', '8'], ['3', '6', '9']]
 
 
-def test_column_returns_columns_2():
+def test_columns_returns_columns_2():
     m = Matrix("89 1903 3\n18 3 1\n9 4 800")
     assert m.columns() == [['89', '18', '9'], [
         '1903', '3', '4'], ['3', '1', '800']]
