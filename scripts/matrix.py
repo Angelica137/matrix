@@ -43,7 +43,7 @@ class Matrix:
 
 def vector_format(string_vector: list) -> list:
     """
-    : param: string_vector -> is a list of strings
+    : param: string_vector -> a list of strings
     : Return: vector -> formats the list of strings to return the items as integers
     """
     for i in range(len(string_vector)):
