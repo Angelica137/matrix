@@ -14,9 +14,7 @@ class Matrix:
         Returns the row requested by row_number
         """
         single_row = self.rows()[row_number - 1].split(" ")
-        for i in range(len(single_row)):
-            single_row[i] = int(single_row[i])
-        return single_row
+        return vector_format(single_row)
 
     def columns(self) -> list:
         """
