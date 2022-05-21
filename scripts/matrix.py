@@ -3,7 +3,7 @@ class Matrix:
     def __init__(self, matrix_string: str) -> str:
         self.matrix_string = matrix_string
 
-    def rows(self) -> list:
+    def matrix(self) -> list:
         """
         Returns a list with the rows in the matrix
         """
@@ -17,7 +17,7 @@ class Matrix:
         """
         Returns the row requested by row_number
         """
-        single_row = self.rows()[row_number - 1]  # O(n)
+        single_row = self.matrix()[row_number - 1]  # O(n)
         for i in range(len(single_row)):
             single_row[i] = int(single_row[i])
         return single_row
@@ -27,6 +27,6 @@ class Matrix:
         Returns a list with the columns in the matrix
         """
         column = []
-        for row in self.rows():
+        for row in self.matrix():
             column.append(int(row[column_number - 1]))
         return column
