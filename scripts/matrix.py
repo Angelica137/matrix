@@ -7,7 +7,11 @@ class Matrix:
         """
         Returns a list with the rows in the matrix
         """
-        return self.matrix_string.split("\n")
+        rows = self.matrix_string.split("\n")
+        matrix = []
+        for row in rows:
+            matrix.append(row.split(" "))
+        return matrix
 
     def row(self, row_number: int) -> list:
         """
