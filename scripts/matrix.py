@@ -20,22 +20,14 @@ class Matrix:
         single_row = self.rows()[row_number - 1]  # O(n)
         return vector_format(single_row)  # O(n)
 
-    def columns(self) -> list:
+    def columns(self, index) -> list:
         """
         Returns a list with the columns in the matrix
         """
-        columns = []
-        rows = []
+        column = []
         for row in self.rows():
-            rows.append(row.split(" "))
-        i = 0
-        while i < len(rows[0]):
-            column = []
-            for row in rows:
-                column.append(row[i])
-            columns.append(column)
-            i += 1
-        return columns
+            column.append(int(row[index - 1]))
+        return column
 
     def column(self, column_number: int) -> list:
         """
