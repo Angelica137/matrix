@@ -31,16 +31,14 @@ def test_columns_returns_columns_2():
     assert m.columns(1) == [89, 18, 9]
 
 
-"""
 def test_column_returns_single_column_1():
     m = Matrix("1")
-    assert m.column(1) == [1]
+    assert m.columns(1) == [1]
 
 
 def test_column_returns_column_2():
     m = Matrix("89 1903 3\n18 3 1\n9 4 800")
-    assert m.column(2) == [1903, 3, 4]
-"""
+    assert m.columns(2) == [1903, 3, 4]
 
 
 def test_vector_format():

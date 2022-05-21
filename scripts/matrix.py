@@ -20,7 +20,7 @@ class Matrix:
         single_row = self.rows()[row_number - 1]  # O(n)
         return vector_format(single_row)  # O(n)
 
-    def columns(self, index) -> list:
+    def column(self, index) -> list:
         """
         Returns a list with the columns in the matrix
         """
@@ -28,13 +28,6 @@ class Matrix:
         for row in self.rows():
             column.append(int(row[index - 1]))
         return column
-
-    def column(self, column_number: int) -> list:
-        """
-        Returns a list with the column itens for the requested column
-        """
-        single_column = self.columns()[column_number - 1]
-        return vector_format(single_column)
 
 
 def vector_format(string_vector: list) -> list:
