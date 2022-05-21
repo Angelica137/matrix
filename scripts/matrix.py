@@ -22,11 +22,11 @@ class Matrix:
             single_row[i] = int(single_row[i])
         return single_row
 
-    def column(self, index) -> list:
+    def column(self, column_number) -> list:
         """
         Returns a list with the columns in the matrix
         """
         column = []
         for row in self.rows():
-            column.append(int(row[index - 1]))
+            column.append(int(row[column_number - 1]))
         return column
