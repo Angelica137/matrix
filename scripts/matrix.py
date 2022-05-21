@@ -30,13 +30,3 @@ class Matrix:
         for row in self.rows():
             column.append(int(row[index - 1]))
         return column
-
-
-def vector_format(string_vector: list) -> list:
-    """
-    : param: string_vector -> a list of strings
-    : Return: vector -> formats the list of strings to return the items as integers
-    """
-    for i in range(len(string_vector)):
-        string_vector[i] = int(string_vector[i])
-    return string_vector
