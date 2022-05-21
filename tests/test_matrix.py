@@ -8,7 +8,7 @@ def test_matris_returns_input_string():
 
 def test_matrix_returns_rows():
     m = Matrix("1 2 3\n4 5 6\n7 8 9")
-    assert m.rows() == ["1 2 3", "4 5 6", "7 8 9"]
+    assert m.rows() == [['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9']]
 
 
 def test_row_returns_single_row_1():
@@ -16,6 +16,7 @@ def test_row_returns_single_row_1():
     assert m.row(1) == [1]
 
 
+"""
 def test_row_returns_single_row_1():
     m = Matrix("1 2 3\n4 5 6\n7 8 9")
     assert m.row(1) == [1, 2, 3]
@@ -45,3 +46,4 @@ def test_column_returns_column_2():
 def test_vector_format():
     sv = ['89', '18', '9']
     assert vector_format(sv) == [89, 18, 9]
+"""
