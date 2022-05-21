@@ -7,9 +7,9 @@ class Matrix:
         """
         Returns a list with the rows in the matrix
         """
-        rows = self.matrix_string.split("\n")
+        rows = self.matrix_string.split("\n")  # O(n)
         matrix = []
-        for row in rows:
+        for row in rows:  # O(n)
             matrix.append(row.split(" "))
         return matrix
 
@@ -17,8 +17,8 @@ class Matrix:
         """
         Returns the row requested by row_number
         """
-        single_row = self.rows()[row_number - 1].split(" ")
-        return vector_format(single_row)
+        single_row = self.rows()[row_number - 1]  # O(n)
+        return vector_format(single_row)  # O(n)
 
     def columns(self) -> list:
         """
