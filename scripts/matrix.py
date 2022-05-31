@@ -20,7 +20,4 @@ class Matrix:
         """
         Returns a list with the columns in the matrix
         """
-        column = []
-        for row in self.matrix():
-            column.append(int(row[column_number - 1]))
-        return column
+        return [int(row[column_number - 1]) for row in self.matrix()]
