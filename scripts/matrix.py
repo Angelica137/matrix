@@ -5,10 +5,9 @@ class Matrix:
 
     def matrix(self) -> list:
         """
-        Returns a list with the rows in the matrix
+        Returns the matrix formated with each row as a list of string elements
         """
-        matrix = [row.split(" ") for row in self.matrix_string.split("\n")]
-        return matrix
+        return [row.split(" ") for row in self.matrix_string.split("\n")]
 
     def row(self, row_number: int) -> list:
         """
